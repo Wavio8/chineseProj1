@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
 </head>
 <body>
 <header class="top main-header">
     <div class="logo__nav">
         <div class="menu-left">
-            <div class="logo">
+            <a href="/" class="logo">
                 <img src="/images/logo.svg" alt="">
-            </div>
+            </a>
 
             <nav class="nav">
                 <div class="nav__group">
@@ -24,9 +27,9 @@
             </nav>
         </div>
         <div class="menu-right">
-            <div style="color: white; font-size: 20px; font-family: Gordita; font-weight: 400; letter-spacing: 0.60px; word-wrap: break-word">
+            <a href="tel:8675588304526" class="menu-right__tel">
                 86-755-88304526
-            </div>
+            </a>
         </div>
 
     </div>
@@ -73,85 +76,92 @@
         <div class="welcome-left">
             <div class="welcome-left__title">
                 <div class="welcome-left__text">Software</div>
-                <img src="/images/star2.svg" alt="">
+                <img src="/images/star2.svg" class="welcome-star" alt="">
             </div>
             <div class="welcome-left__text">development</div>
         </div>
         <div class="welcome-down">
-            <div style="color: #00B2FF; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 900; text-transform: uppercase; line-height: 80px; word-wrap: break-word">
+            <div class="welcome-down__blue">
                 servers
             </div>
-            <div style="width: 100%; height: 100%; color: white; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 400; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
+            <div class="welcome-down__white">
                 Mining Equipment
             </div>
-            <div style="width: 100%; opacity: 0.80; color: white; font-size: 17px; font-family: Gordita; font-weight: 500; line-height: 25.50px; word-wrap: break-word">
+            <div class="welcome-down__subtitle">
                 Our company is committed to providing advanced technology and solutions for their business and
                 innovation projects
             </div>
         </div>
     </div>
 </div>
+<div class="welcome-line"></div>
 <div class="section-request">
     <div class="welcome-down">
         <div class="request__text">
-            <span style="color: #2E3130; font-size: 40px; font-family: RF Dewi Expanded; font-weight: 400; text-transform: uppercase; line-height: 54px; word-wrap: break-word">
+            <span class="request__title">
                 We help configuring any server or data storage system to your needs and budget.
                 <br/>
             </span>
-            <span style="color: #2E3130; font-size: 55px; font-family: RF Dewi Expanded; font-weight: 900; text-transform: uppercase; line-height: 74.25px; word-wrap: break-word">
+            <span class="request__subtitle">
                 Submit your
             </span>
-            <span style="color: #2E3130; font-size: 55px; font-family: RF Dewi Expanded; font-weight: 900; text-transform: uppercase; line-height: 69.30px; word-wrap: break-word">
+            <span class="request__subtitle request__subtitle-down">
                 request
             </span>
         </div>
     </div>
 </div>
 <div class="section-support">
-    <div style="width: 100%; height: 100%; text-align: right">
-        <span style="color: #00B2FF; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 900; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
+    <div class="welcome-left support__title ">
+        <span class="welcome-down__blue">
             Our team
         </span>
-        <span style="color: white; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 400; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
-        is ready to provide consulting
-    </span>
-    </div>
-    <img src="/images/star2.svg" alt="">
-    <img src="/images/globe.svg" style="position: absolute;top: 351px;left: 60px;" alt="">
-    <div style="width: 100%; opacity: 0.80; color: white; font-size: 17px; font-family: Gordita; font-weight: 500; line-height: 25.50px; word-wrap: break-word">
-        We offer a wide range of servers, including high-performance servers for big data, servers for virtualization,
-        and servers for processing and storing video and audio content. In addition, we offer cryptocurrency mining
-        equipment such as ASIC miners and GPUs. Our team is also ready to develop innovative artificial intelligence
-        solutions for your business, including machine learning systems and neural networks. Reliability, performance
-        and innovation are what we guarantee to our customers. Contact us to learn more about how we can help you
-        achieve your business goals.
-    </div>
-    <div style="color: white; font-size: 24px; font-family: RF Dewi Expanded; font-weight: 700; text-transform: uppercase; line-height: 36px; word-wrap: break-word">
-        Our expert team is available by phone or email:
-    </div>
-    <div style="display: flex">
-        <div style="width: 100%; text-align: center; color: white; font-size: 20px; font-family: Gordita; font-weight: 500; line-height: 30px; word-wrap: break-word">
-            86-755-88304526
+        <span class="welcome-down__white">
+            is ready to provide consulting
+        </span>
+        <div class="support__title-star">
+            <div class="welcome-down__white">support</div>
+            <img src="/images/star2.svg" class="welcome-star" alt="">
         </div>
-        <div style="width: 100%; text-align: center; color: white; font-size: 20px; font-family: Gordita; font-weight: 500; line-height: 30px; word-wrap: break-word">
-            8304516@gmail.com
+        <div class="support__text">
+            We offer a wide range of servers, including high-performance servers for big data, servers for
+            virtualization,
+            and servers for processing and storing video and audio content. In addition, we offer cryptocurrency mining
+            equipment such as ASIC miners and GPUs. Our team is also ready to develop innovative artificial intelligence
+            solutions for your business, including machine learning systems and neural networks. Reliability,
+            performance
+            and innovation are what we guarantee to our customers. Contact us to learn more about how we can help you
+            achieve your business goals.
         </div>
+        <div class="support__contacts-title">
+            Our expert team is available by phone or email:
+        </div>
+        <div class="support__contacts">
+            <a href="tel:8675588304526" class="support__contact">
+                86-755-88304526
+            </a>
+            <a href="mailto:8304516@gmail.com" class="support__contact">
+                8304516@gmail.com
+            </a>
 
+        </div>
     </div>
+
+    <img src="/images/globe.svg" class="globe" alt="">
 </div>
+<div class="welcome-line"></div>
 <div class="section-function">
     <div class="welcome-left function__content">
         <div class="function__left">
-            <div style="width: 100%; height: 100%">
-               <span style="color: white; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 400; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
+            <span class="function__title-white">
                    We will
-               </span>
-                <span style="color: #00B2FF; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 400; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
-                </span>
-                <span style="color: #00B2FF; font-size: 100px; font-family: RF Dewi Expanded; font-weight: 900; text-transform: uppercase; line-height: 90px; word-wrap: break-word">
+            </span>
+            <span class="function__title-blue">
+            </span>
+            <span class="function__title-blue">
                save you time!
            </span>
-            </div>
+
         </div>
         <div class="function__right">
             <div class="function__card-external">
@@ -161,28 +171,133 @@
                     <div class="function__card-title">
                         Expertise and selection of equipment
                     </div>
+                    <div class="function__card-text">
+                        We will select several options for&nbsp;the&nbsp;same solution
+                    </div>
                 </div>
             </div>
-            <div class="function__card">
-                <div class="function__card-title">
-                    Expertise and selection of equipment
-                </div>
-            </div>
-            <div class="function__card function__card-down">
-                <div class="function__card-title">
-                    Expertise and selection of equipment
-                </div>
-            </div>
-            <div class="function__card function__card-down">
-                <div class="function__card-title">
-                    Expertise and selection of equipment
-                </div>
-            </div>
+            <div class="function__card-external">
+                <div class="function__number">02</div>
+                <div class="function__card">
 
+                    <div class="function__card-title">
+                        Fast <br> sending
+                    </div>
+                    <div class="function__card-text">
+                        The default is “Door to Door”;
+                        <br>
+                        Insurance
+                    </div>
+                </div>
+            </div>
+            <div class="function__card-external">
+                <div class="function__number">03</div>
+                <div class="function__card">
+
+                    <div class="function__card-title">
+                        Installation and commissioning
+                    </div>
+                    <div class="function__card-text">
+                        Assistance in installation;
+                        <br>
+                        Remote setup - default service set
+                    </div>
+                </div>
+            </div>
+            <div class="function__card-external">
+                <div class="function__number">04</div>
+                <div class="function__card">
+
+                    <div class="function__card-title">
+                        Warranty service
+                    </div>
+                    <div class="function__card-text">
+                        We will perform diagnostics and testing remotely at your request.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="section-solutions">
+    <div class="solutions-variants">
+        <div class="solution__type-active">
+            <div class="solution__active-text">File</div>
+        </div>
+        <div class="solution__type">
+            <div class="solution__type-text">Camera surveillance</div>
+        </div>
+        <div class="solution__type">
+            <div class="solution__type-text">Virtualization</div>
+        </div>
+        <div class="solution__type">
+            <div class="solution__type-text">Terminal</div>
+        </div>
+        <div class="solution__type">
+            <div class="solution__type-text">Data storage</div>
+        </div>
+    </div>
+    <div class="solution__title">
+        Our solutions
+    </div>
+    <div class="solution__subtitle">
+        We provide a range of server solutions that can help businesses of all sizes store and manage their data more
+        efficiently. Here are some of the solutions we offer:
+    </div>
+    <div class="vanguard">
+        <img src="/images/Vanguard.svg" class="welcome-star" alt="">
+    </div>
 
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="/images/sl1.png" alt="">
+                    <div>
+                        Description 01
+                    </div>
+                </li>
 
+                <li class="splide__slide">
+                    <img src="/images/globe.svg" alt="">
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+                <li class="splide__slide">
+
+                    <img src="/images/globe.svg" alt="">
+                    <div>
+                        Description 01
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <img src="/images/globe.svg" alt="">
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pk">
+            <img src="/images/pk.svg"  alt="">
+        </div>
+    </section>
+
+</div>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#image-carousel', {
+            perPage    : 2,
+            breakpoints: {
+                640: {
+                    perPage: 1,
+                },
+            },
+        } ).mount();
+    } );
+</script>
 </body>
 </html>

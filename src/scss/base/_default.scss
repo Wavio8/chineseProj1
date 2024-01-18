@@ -36,10 +36,20 @@ header{
   margin-bottom: auto;
   width: 55%;
 
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-between;
-  //width: 100%;
+}
+.nav__button{
+  color: #FFF;
+  font-family: 'Gordita',sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.nav__button:hover{
+  color: #00B2FF;
+  opacity: 1;
 
 }
 .nav__group{
@@ -52,43 +62,47 @@ header{
   align-items: center;
   margin-right: 3%;
   justify-content: right;
-  opacity: 0.20;
-  background: black;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  backdrop-filter: blur(77px);
+}
+.menu-right__tel{
+  color: white;
+  font-size: 20px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.60px;
+  word-wrap: break-word;
+  transition: 0.3s;
 
+}
+.menu-right__tel:hover{
+  color: #00B2FF;
 }
 
 
-
-
-//.group__button {
-//
-//  padding-right: 4%;
-//  display: flex;
-//  width: 32%;
-//}
-//.nav__button {
-//
-//  color: #616161;
-//  font-size: 18px;
-//  font-family: Lato, sans-serif;
-//  font-weight: 400;
-//  word-wrap: break-word;
-//  text-decoration: none;
-//}
 .welcome{
-  background-image: url("/src/images/bg1.png");
+  background-image: url("/src/images/bg1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  height: 984px;
+  min-height: 943px;
+}
+.welcome-line{
+  background-image: url("/src/images/line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  min-height: 32px;
+}
+.welcome-star{
+  margin-left: 1%;
 }
 .welcome-left__text{
   height: 100%;
   color: white;
   font-size: 100px;
-  font-family: RF Dewi Expanded;
+  font-family: 'RF Dewi Expanded',sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 90px;
@@ -109,6 +123,36 @@ header{
   max-width: 870px;
   margin: 0 auto;
 }
+.welcome-down__blue{
+  color: #00B2FF;
+  font-size: 100px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 90px;
+  word-wrap: break-word;
+}
+.welcome-down__white{
+  color: white;
+  font-size: 100px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 90px;
+  word-wrap: break-word;
+}
+
+.welcome-down__subtitle{
+  margin-top: 5%;
+  width: 60%;
+  opacity: 0.80;
+  color: white;
+  font-size: 17px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 500;
+  line-height: 25.50px;
+  word-wrap: break-word;
+}
 
 .section-request{
   background-image: url("/src/images/bg-2.svg");
@@ -119,26 +163,143 @@ header{
 }
 
 .request__text{
-  width: 100%;
+  width: 78%;
   height: 100%;
   padding-top: 147px;
+}
+.request__title{
+  color: #2E3130;
+  font-size: 40px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 54px;
+  word-wrap: break-word;
+}
+.request__subtitle{
+  color: #2E3130;
+  font-size: 55px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 74.25px;
+  word-wrap: break-word;
+}
+.request__subtitle-down{
+  line-height: 69.30px;
 }
 .section-support{
   background-color: #000000;
   position: relative;
   min-height: 913px;
+  padding-top: 140px;
+}
+.support__title{
+  position: relative;
+  z-index: 5;
+  text-align: right;
+  padding-bottom: 5%;
+}
+.support__title-star{
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 41%;
+  //justify-content: flex-end;
+}
+.support__text{
+  margin-top: 4%;
+  text-align: left;
+  padding-left: 41%;
+  width: 100%;
+  opacity: 0.80;
+  color: white;
+  font-size: 17px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 500;
+  line-height: 25.50px;
+  word-wrap: break-word;
+}
+.support__contacts-title{
+  margin-top: 4%;
+  padding-left: 41%;
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+.support__contacts{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 41%;
+  text-align: left;
+  margin-top: 1%;
+  gap: 2%;
+}
+.support__contact{
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 500;
+  line-height: 30px;
+  word-wrap: break-word;
+  width: 259px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+}
+.globe{
+  position: absolute;
+  top: 351px;
+  left: 60px;
 }
 .section-function{
   background-image: url("/src/images/bg4.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  min-height: 830px;
+  min-height: 798px;
 }
 .function__content{
   padding-top: 167px;
   display: flex;
   justify-content: space-between;
+}
+.function__title-white{
+  color: white;
+  font-size: 100px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 90px;
+  word-wrap: break-word;
+}
+.function__title-blue{
+  color: #00B2FF;
+  font-size: 100px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 90px;
+  word-wrap: break-word;
+}
+.function__card-text{
+  margin-top: 5%;
+  width: 90%;
+  //opacity: 0.70;
+  color: rgba(255, 255, 255, 0.7);;
+  font-size: 17px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 500;
+  line-height: 25.50px;
+  word-wrap: break-word;
 }
 .function__left{
   width: 40%;
@@ -165,7 +326,7 @@ header{
 .function__card-title{
   color: white;
   font-size: 24px;
-  font-family: RF Dewi Expanded;
+  font-family: 'RF Dewi Expanded',sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 26.40px;
@@ -176,11 +337,12 @@ header{
 }
 .function__number{
   position: absolute;
-  left: -24px;
+  top: 52px;
+  left: -35px;
   z-index: 1;
   color: #D264E4;
   font-size: 75px;
-  font-family: RF Dewi Expanded;
+  font-family: 'RF Dewi Expanded',sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 60px;
@@ -188,5 +350,120 @@ header{
 }
 .function__card-external{
   position: relative;
+}
+.solutions-variants{
+  position: relative;
+  z-index: 6;
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+}
+.solution__type-active{
+  padding: 4px 16px 2px;
+  background: #BD31C8;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+.solution__type{
+  padding: 4px 16px 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px #2E3130 solid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+.solution__type-text{
+  color: #2E3130;
+  font-size: 17px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 23.80px;
+  word-wrap: break-word;
+}
+.solution__active-text{
+  color: white;
+  font-size: 17px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 23.80px;
+  word-wrap: break-word;
+}
+.solution__title{
+  position: relative;
+  z-index: 5;
+  margin-top: 1%;
+  text-align: center;
+  color: #00B2FF;
+  font-size: 100px;
+  font-family: 'RF Dewi Expanded',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 115px;
+  word-wrap: break-word;
+}
+.section-solutions{
+  position: relative;
+  width: 100%;
+}
+.solution__subtitle{
+  position: relative;
+  z-index: 5;
+  margin-top: 1%;
+  text-align: center;
+  color: #2E3130;
+  font-size: 20px;
+  font-family: 'Gordita',sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+.vanguard{
+  position: absolute;
+  top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 85%;
+}
+#image-carousel{
+  position: relative;
 
+
+}
+#image-carousel .splide__track{
+  position: relative;
+  z-index: 10;
+  width: 47%;
+  margin: 0 auto;
+}
+#image-carousel .splide__slide{
+  width: 440px;
+  height: 524px;
+  border-radius: 15px;
+  background: #FFF;
+}
+.pk{
+  position: absolute;
+  top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 80%;
+}
+.splide__slide img {
+
+  height: 54%;
+  object-fit: cover;
 }
