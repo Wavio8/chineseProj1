@@ -109,18 +109,19 @@
                 request
             </span>
         </div>
+        <button class="button-form _open" for="apf"><p>Send a request</p></button>
     </div>
 </div>
 <div class="section-support">
     <div class="welcome-left support__title ">
-        <span class="welcome-down__blue">
+        <span class="welcome-down__blue support__down-blue ">
             Our team
         </span>
-        <span class="welcome-down__white">
+        <span class="welcome-down__white support__down-white">
             is ready to provide consulting
         </span>
         <div class="support__title-star">
-            <div class="welcome-down__white">support</div>
+            <div class="welcome-down__white support__down-white">support</div>
             <img src="/images/star2.svg" class="welcome-star" alt="">
         </div>
         <div class="support__text">
@@ -220,22 +221,58 @@
     </div>
 </div>
 <div class="section-solutions">
+
     <div class="solutions-variants">
-        <div class="solution__type-active">
-            <div class="solution__active-text">File</div>
-        </div>
-        <div class="solution__type">
-            <div class="solution__type-text">Camera surveillance</div>
-        </div>
-        <div class="solution__type">
-            <div class="solution__type-text">Virtualization</div>
-        </div>
-        <div class="solution__type">
-            <div class="solution__type-text">Terminal</div>
-        </div>
-        <div class="solution__type">
-            <div class="solution__type-text">Data storage</div>
-        </div>
+        <section
+                id="thumbnail-carousel"
+                class="splide"
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+        >
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <button class="solution__type">
+                            File
+                        </button>
+                    </li>
+                    <li class="splide__slide">
+                        <button class="solution__type">
+                            Camera surveillance
+                        </button>
+                    </li>
+                    <li class="splide__slide">
+                        <button class="solution__type">
+                            Virtualization
+                        </button>
+                    </li>
+                    <li class="splide__slide">
+                        <button class="solution__type">
+                            Terminal
+                        </button>
+                    </li>
+                    <li class="splide__slide">
+                        <button class="solution__type">
+                            Data storage
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<!--        <div class="solution__type-active">-->
+<!--            <div class="solution__active-text">File</div>-->
+<!--        </div>-->
+<!--        <button class="solution__type">-->
+<!--            Camera surveillance-->
+<!--        </button>-->
+<!--        <button class="solution__type">-->
+<!--            Virtualization-->
+<!--        </button>-->
+<!--        <button class="solution__type">-->
+<!--            Terminal-->
+<!--        </button>-->
+<!--        <button class="solution__type">-->
+<!--            Data storage-->
+<!--        </button>-->
     </div>
     <div class="solution__title">
         Our solutions
@@ -249,55 +286,178 @@
     </div>
 
     <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 2L3 14.5L15 27" stroke="#2E3130" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L14.5 14.5L2 27" stroke="#2E3130" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+
+            </button>
+        </div>
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
                     <img src="/images/sl1.png" alt="">
-                    <div>
-                        Description 01
+                    <div class="slider1__text">
+                        <div class="slider1__title">
+                            Camera surveillance server
+                        </div>
+                        <div class="slider1__subtitle">
+                            A Camera Surveillance Server is a type of server that is used for storing and managing video
+                            footage captured by surveillance cameras.
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+
+                    <img src="/images/sl2.png" alt="">
+                    <div class="slider1__text">
+                        <div class="slider1__title">
+                            Virtualization server
+                        </div>
+                        <div class="slider1__subtitle">
+                            Is a type of server that uses virtualization technology to create multiple virtual machines
+                            (VMs) on a single physical server.
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="/images/sl1.png" alt="">
+                    <div class="slider1__text">
+                        <div class="slider1__title">
+                            Camera surveillance server
+                        </div>
+                        <div class="slider1__subtitle">
+                            A Camera Surveillance Server is a type of server that is used for storing and managing video
+                            footage captured by surveillance cameras.
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+
+                    <img src="/images/sl2.png" alt="">
+                    <div class="slider1__text">
+                        <div class="slider1__title">
+                            Virtualization server
+                        </div>
+                        <div class="slider1__subtitle">
+                            Is a type of server that uses virtualization technology to create multiple virtual machines
+                            (VMs) on a single physical server.
+                        </div>
                     </div>
                 </li>
 
                 <li class="splide__slide">
-                    <img src="/images/globe.svg" alt="">
-                    <div>
-                        Description 02
-                    </div>
-                </li>
-                <li class="splide__slide">
 
-                    <img src="/images/globe.svg" alt="">
-                    <div>
-                        Description 01
-                    </div>
-                </li>
-
-                <li class="splide__slide">
-                    <img src="/images/globe.svg" alt="">
-                    <div>
-                        Description 02
+                    <img src="/images/sl2.png" alt="">
+                    <div class="slider1__text">
+                        <div class="slider1__title">
+                            Virtualization server
+                        </div>
+                        <div class="slider1__subtitle">
+                            Is a type of server that uses virtualization technology to create multiple virtual machines
+                            (VMs) on a single physical server.
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="pk">
-            <img src="/images/pk.svg"  alt="">
+            <img src="/images/pk.svg" alt="">
         </div>
     </section>
 
 </div>
+<div>
+    <img src="/images/company.svg" style="width: 100%" alt="">
+</div>
+<div class="section-contacts">
+    <div class="contacts__info">
+        <div class="contacts__text">
+            COMMLAND ELECTRONICS LTD Flats 208-214, 2/F, Block B,iPARK Building No. 26 DengLiang Rd., NanShan District,
+            ShenZhen, 518054,China
+        </div>
+        <div class="contacts__tel">
+            <a href="tel:8675588304526" class="contact">
+                86-755-88304526
+            </a>
+            <a href="mailto:8304516@gmail.com" class="contact">
+                8304516@gmail.com
+            </a>
+
+        </div>
+    </div>
+    <img src="/images/map.png" class="map" alt="">
+    <img src="/images/globe-contact.svg" class="globe-contacts" alt="">
+</div>
+<div class="footer">
+    <div class="footer__info">
+        © 2023 COMMLAND ELECTRONICS LTD
+    </div>
+
+</div>
+<div class="_popup hidden" id="apf">
+    <div class="_popup__content">
+        <form class="form application-form" method="POST">
+            <div class="_close" for="apf"></div>
+            <div class="form__title">Submit your application</div>
+            <p>
+                If you have any questions, <br/>
+                we are always ready to help you with advice and choice.
+            </p>
+            <img class="form-dots" src="/images/x-dots.png">
+            <input class="form-input" type="text" name="name" placeholder="Your name"/>
+            <input class="form-input" type="text" name="tel" placeholder="Phone number"/>
+            <input class="form-input up-top" type="text" name="message" placeholder="Message"/>
+            <!-- <textarea class="form-text-area" name="message" rows="7" placeholder="Message"></textarea> -->
+            <div class="politic">
+                <input type="checkbox" class="checkbox" id="cb1" name="" value="yes" required/>
+                <label for="cb1" class="politic-text">
+                    <p>Consent to the processing of personal data</p>
+                </label>
+            </div>
+            <button class="btn">Send</button>
+        </form>
+    </div>
+</div>
 
 <script>
     document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '#image-carousel', {
-            perPage    : 2,
+        var elements = document.getElementsByClassName("solution__type");
+
+        var count = elements.length;
+        console.log(count);
+        var main= new Splide('#image-carousel', {
+            perPage: 2,
             breakpoints: {
                 640: {
                     perPage: 1,
                 },
             },
-        } ).mount();
+            gap: 21,
+        });
+        var thumbnails =new Splide( '#thumbnail-carousel', {
+            autoWidth: true,
+            perPage: count,
+            isNavigation: true,
+            gap       : 10,
+            rewind    : true,
+            pagination: false,
+        } );
+        main.sync( thumbnails );
+        main.mount();
+        thumbnails.mount();
     } );
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //
+    // });
+
 </script>
 </body>
 </html>

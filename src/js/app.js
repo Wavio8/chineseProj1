@@ -3,8 +3,8 @@
 
 // import burgerMenuItit from "./menu";
 // import { scrollByInit, toUpInit } from "./scroll";
-// import { closeInit, openInit } from "./openClose";
-// import popupInit from "./popup";
+import { closeInit, openInit } from "./openClose";
+import popupInit from "./popup";
 // import selectorInit from "./selector";
 // import filterInit from "./filter";
 import "../scss/app.scss";
@@ -12,9 +12,9 @@ import componentsInit from "./components";
 
 const start = () => {
   // slidersInit();
-  // popupInit();
-  // openInit();
-  // closeInit();
+  popupInit();
+  openInit();
+  closeInit();
   // selectorInit();
   // filterInit();
   //   clickInit();
